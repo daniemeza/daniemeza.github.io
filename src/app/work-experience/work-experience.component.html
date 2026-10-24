@@ -2,3 +2,11 @@
 <p>
     {{workExperienceService.accessWorkExperience}}
 </p>
+<ul *ngFor="let job of workExperience;">
+    <li>
+        {{job.company}} | <i>{{job.location}}</i> <br>
+        <b>{{job.position}}</b> | <i>{{job.startDate }} - {{job.endDate}}</i><br>
+        Responsibilities and accomplishments: <br>
+        {{job.accomplishments}} <br>
+    </li>
+</ul>
